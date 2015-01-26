@@ -1,5 +1,14 @@
+/*
+ * Print size of standart C types to stdout
+ */
+
 #include <stdio.h>  // printf()
-#include <stdlib.h> // int32_t, int64_t
+
+#if 0 // FIXME Linux
+#  include <stdlib.h> // int32_t, int64_t
+#else // FIXME MinGW, Visual C
+#  include <stdint.h> // int32_t, int64_t
+#endif
 
 int main()
 {
@@ -19,3 +28,4 @@ int main()
   return 0;
 }
 
+/*** end of "sizeof.c" file ***/

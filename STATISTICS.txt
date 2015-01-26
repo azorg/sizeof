@@ -1,4 +1,6 @@
 ==============================================================================
+*** Linux x64
+
 #uname -a
 Linux work-pc 3.2.0-37-generic #58-Ubuntu SMP
 Thu Jan 24 15:28:10 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
@@ -16,4 +18,48 @@ sizeof(float)     = 4
 sizeof(double)    = 8
 sizeof(int*)      = 8
 sizeof(void*)     = 8
+==============================================================================
+*** Windows 8.1 x64
+
+#ver
+Microsoft Windows [Version 6.3.9600]
+
+#uname -a
+MINGW32_NT-6.2 THINKPAD 1.0.18(0.48/3/2)
+2012-11-21 22:34 i686 Msys
+
+#sizeof
+sizeof(void)      = 1
+sizeof(char)      = 1
+sizeof(short)     = 2
+sizeof(int)       = 4
+sizeof(long)      = 4
+sizeof(long long) = 8
+sizeof(int32_t)   = 4
+sizeof(int64_t)   = 8
+sizeof(float)     = 4
+sizeof(double)    = 8
+sizeof(int*)      = 4
+sizeof(void*)     = 4
+==============================================================================
+*** Windows 8.1 x64
+*** Microsoft Visual Studio Community 2013
+*** Version 12.0.31101.00 Update 4
+
+#ver
+Microsoft Windows [Version 6.3.9600]
+
+#sizeof
+sizeof(void)      = 0
+sizeof(char)      = 1
+sizeof(short)     = 2
+sizeof(int)       = 4
+sizeof(long)      = 4
+sizeof(long long) = 8
+sizeof(int32_t)   = 4
+sizeof(int64_t)   = 8
+sizeof(float)     = 4
+sizeof(double)    = 8
+sizeof(int*)      = 4
+sizeof(void*)     = 4
 ==============================================================================
