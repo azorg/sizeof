@@ -10,7 +10,7 @@ CLEAN_FILES := "$(OUT_DIR)/$(OUT_NAME).exe"
 SRCS := sizeof.c
 
 # 2-nd way to select source files
-#SRC_DIRS := . libs/src
+#SRC_DIRS := .
 
 #----------------------------------------------------------------------------
 DEFS      :=
