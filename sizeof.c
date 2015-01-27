@@ -6,7 +6,7 @@
 
 #if 0 // FIXME Linux
 #  include <stdlib.h> // int32_t, int64_t
-#else // FIXME MinGW, Visual C
+#else // FIXME MinGW, Visual C, Linux
 #  include <stdint.h> // int32_t, int64_t
 #endif
 
