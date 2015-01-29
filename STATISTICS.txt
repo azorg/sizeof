@@ -19,14 +19,19 @@ sizeof(double)    = 8
 sizeof(int*)      = 8
 sizeof(void*)     = 8
 ==============================================================================
-*** Windows 8.1 x64
+*** MinGW32 under Windows 8.1 x64
 
 #ver
 Microsoft Windows [Version 6.3.9600]
 
 #uname -a
-MINGW32_NT-6.2 THINKPAD 1.0.18(0.48/3/2)
-2012-11-21 22:34 i686 Msys
+MINGW32_NT-6.2 THINKPAD 1.0.18(0.48/3/2) 2012-11-21 22:34 i686 Msys
+
+#gcc --version
+gcc.exe (GCC) 4.8.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 #sizeof
 sizeof(void)      = 1
@@ -41,6 +46,27 @@ sizeof(float)     = 4
 sizeof(double)    = 8
 sizeof(int*)      = 4
 sizeof(void*)     = 4
+==============================================================================
+*** MinGW-w64 under Window 8.1 x64
+
+#gcc --version
+gcc.exe (x86_64-posix-seh-rev1, Built by MinGW-W64 project) 4.9.2
+Copyright (C) 2014 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+sizeof(void)      = 1
+sizeof(char)      = 1
+sizeof(short)     = 2
+sizeof(int)       = 4
+sizeof(long)      = 4
+sizeof(long long) = 8
+sizeof(int32_t)   = 4
+sizeof(int64_t)   = 8
+sizeof(float)     = 4
+sizeof(double)    = 8
+sizeof(int*)      = 8
+sizeof(void*)     = 8
 ==============================================================================
 *** Windows 8.1 x64
 *** Microsoft Visual Studio Community 2013
@@ -63,3 +89,4 @@ sizeof(double)    = 8
 sizeof(int*)      = 4
 sizeof(void*)     = 4
 ==============================================================================
+
