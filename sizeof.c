@@ -28,12 +28,6 @@ int main()
   printf("sizeof(int*)      = %i\n", (int) sizeof(int*));
   printf("sizeof(void*)     = %i\n", (int) sizeof(void*));
 
-  if (0)
-  {
-    int64_t i64 = 0x1234567890ABCDEFLL;
-    printf("\nprintf() int64_t by %%I64X (hex): %I64X \n", (int64_t) i64);
-  }
-
   return 0;
 }
 
