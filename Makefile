@@ -12,16 +12,15 @@ SRCS := sizeof.c
 #SRC_DIRS := .
 
 #----------------------------------------------------------------------------
-DEFS      :=
 #INC_DIRS  := ../libs/include 
-
+#DEFS      := -DSIZEOF_DEBUG
 OPTIM     := -Os -fomit-frame-pointer
 #OPTIM     := -O0 -g
 WARN      := -Wall
 
 #ASFLAGS   := -mcpu=cortex-m3 -mthumb $(ASFLAGS)
-CFLAGS    := $(WARN) -pipe $(OPTIM) $(DEFS) $(CFLAGS)
-CXXFLAGS  := $(CFLAGS) $(CXXFLAGS)
+CFLAGS    := $(WARN) $(OPTIM) $(DEFS) $(CFLAGS) -pipe
+CXXFLAGS  := $(CXXFLAGS) $(CFLAGS)
 LDFLAGS   := -lm $(LDFLAGS)
 #----------------------------------------------------------------------------
 #_AS  := @as
