@@ -1,6 +1,6 @@
 #============================================================================
 # Skeleton for GNU Make
-# Version: 0.8.1
+# Version: 0.8.2
 # File: "Makefile.skel"
 # (C) 2005...2015 Alex Zorg <azorg@mail.ru>
 # Licensed by GNU General Public License version 2
@@ -214,12 +214,12 @@ clr: clrdep clrobj
 clrdep: 
 	$(RMF) $(DEPS)
 	$(RMF) $(DEPS_DIR_FLG)
-	$(RMDIRF) $(DEPS_DIR)
+	$(RMDIR) $(DEPS_DIR)
 
 clrobj: 
 	$(RMF) $(OBJS)
 	$(RMF) $(OBJS_DIR_FLG)
-	$(RMDIRF) $(OBJS_DIR)
+	$(RMDIR) $(OBJS_DIR)
 
 clean:
 	$(RMF) $(OUT)
