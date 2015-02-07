@@ -6,18 +6,19 @@ Linux work-pc 3.2.0-37-generic #58-Ubuntu SMP
 Thu Jan 24 15:28:10 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
 
 #sizeof
-sizeof(void)      = 1
-sizeof(char)      = 1
-sizeof(short)     = 2
-sizeof(int)       = 4
-sizeof(long)      = 8
-sizeof(long long) = 8
-sizeof(int32_t)   = 4
-sizeof(int64_t)   = 8
-sizeof(float)     = 4
-sizeof(double)    = 8
-sizeof(int*)      = 8
-sizeof(void*)     = 8
+sizeof(void)        = 1
+sizeof(char)        = 1
+sizeof(short)       = 2
+sizeof(int)         = 4
+sizeof(long)        = 8
+sizeof(long long)   = 8
+sizeof(int32_t)     = 4
+sizeof(int64_t)     = 8
+sizeof(float)       = 4
+sizeof(double)      = 8
+sizeof(long double) = 16
+sizeof(int*)        = 8
+sizeof(void*)       = 8
 ==============================================================================
 *** MinGW32 under Windows 8.1 x64
 
