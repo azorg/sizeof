@@ -25,6 +25,7 @@ int main()
   printf("sizeof(int*)        = %i\n", (int) sizeof(int*));
   printf("sizeof(void*)       = %i\n", (int) sizeof(void*));
   printf("sizeof(time_t)      = %i\n", (int) sizeof(time_t));
+  printf("sizeof(size_t)      = %i\n", (int) sizeof(size_t));
 
   return 0;
 }
