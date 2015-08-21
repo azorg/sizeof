@@ -20,6 +20,7 @@ sizeof(long double) = 16
 sizeof(int*)        = 8
 sizeof(void*)       = 8
 sizeof(time_t)      = 8
+sizeof(size_t)      = 8
 ==============================================================================
 *** MinGW32 under Windows 8.1 x64
 
@@ -125,5 +126,7 @@ sizeof(double)      = 8
 sizeof(long double) = 16
 sizeof(int*)        = 8
 sizeof(void*)       = 8
+sizeof(time_t)      = 8
+sizeof(size_t)      = 8
 ==============================================================================
 
