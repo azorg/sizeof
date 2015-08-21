@@ -4,6 +4,7 @@
 
 #include <stdio.h>  // printf()
 #include <stdint.h> // int32_t, int64_t
+#include <time.h>   // time_t
 
 int main()
 {
@@ -23,6 +24,7 @@ int main()
   printf("sizeof(long double) = %i\n", (int) sizeof(long double));
   printf("sizeof(int*)        = %i\n", (int) sizeof(int*));
   printf("sizeof(void*)       = %i\n", (int) sizeof(void*));
+  printf("sizeof(time_t)      = %i\n", (int) sizeof(time_t));
 
   return 0;
 }
