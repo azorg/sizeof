@@ -94,4 +94,36 @@ sizeof(long double) = 8
 sizeof(int*)        = 4
 sizeof(void*)       = 4
 ==============================================================================
+Virtual linux server (OVZ) x64
+
+#gcc --version
+Linux noflood 2.6.32-042stab090.5 #1
+SMP Sat Jun 21 00:15:09 MSK 2014 x86_64 x86_64 x86_64 GNU/Linux
+gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2
+
+#cat /proc/cpuinfo
+model name	: Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz
+stepping	: 2
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+fpu		: yes
+bogomips	: 5066.46
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+
+sizeof(void)        = 1
+sizeof(char)        = 1
+sizeof(short)       = 2
+sizeof(int)         = 4
+sizeof(long)        = 8
+sizeof(long long)   = 8
+sizeof(int32_t)     = 4
+sizeof(int64_t)     = 8
+sizeof(float)       = 4
+sizeof(double)      = 8
+sizeof(long double) = 16
+sizeof(int*)        = 8
+sizeof(void*)       = 8
+==============================================================================
 
