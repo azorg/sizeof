@@ -20,6 +20,7 @@ int main()
   printf("sizeof(int32_t)     = %i\n", (int) sizeof(int32_t));
   printf("sizeof(int64_t)     = %i\n", (int) sizeof(int64_t));
   printf("sizeof(float)       = %i\n", (int) sizeof(float));
+  printf("sizeof(float[2])    = %i\n", (int) sizeof(float[2]));
   printf("sizeof(double)      = %i\n", (int) sizeof(double));
   printf("sizeof(long double) = %i\n", (int) sizeof(long double));
   printf("sizeof(int*)        = %i\n", (int) sizeof(int*));
