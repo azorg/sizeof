@@ -8,6 +8,16 @@
 
 int main()
 {
+  unsigned foo = 0x5A;
+  unsigned char *p = (unsigned char *) &foo;
+
+  if (p[sizeof(foo) - 1] == 0x5A)
+    printf ("Big indian\n");
+  else if (p[0] == 0x5A)
+    printf ("Little indian\n");
+  else
+    printf ("Unknown indian (?!)\n");
+
 #ifndef __cplusplus
   printf("sizeof(void)        = %i\n", (int) sizeof(void));
 #endif // __cplusplus
