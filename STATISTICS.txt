@@ -129,4 +129,45 @@ sizeof(void*)       = 8
 sizeof(time_t)      = 8
 sizeof(size_t)      = 8
 ==============================================================================
+*** Orange Pi Win Plus (ARM64)
+
+#uname -a
+Linux opiwin 3.10.107-pine64 #33 SMP PREEMPT Wed Sep 19 13:03:51 CEST 2018 aarch64 aarch64 aarch64 GNU/Linux
+
+#gcc --version
+gcc (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.10) 5.4.0 20160609
+
+#cat /roc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: AArch64
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+Hardware	: sun50iw1p1
+
+#./sizeof
+Little indian
+sizeof(void)        = 1
+sizeof(char)        = 1
+sizeof(short)       = 2
+sizeof(int)         = 4
+sizeof(long)        = 8
+sizeof(long long)   = 8
+sizeof(int32_t)     = 4
+sizeof(int64_t)     = 8
+sizeof(float)       = 4
+sizeof(float[2])    = 8
+sizeof(double)      = 8
+sizeof(long double) = 16
+sizeof(int*)        = 8
+sizeof(void*)       = 8
+sizeof(time_t)      = 8
+sizeof(size_t)      = 8
+==============================================================================
 
