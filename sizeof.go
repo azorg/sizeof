@@ -10,6 +10,7 @@ import (
 	"io"
 	"time"
 	"unsafe"
+  "runtime"
 )
 
 type rd int
@@ -31,6 +32,10 @@ func (rw *rw) Write(p []byte) (n int, err error) { // io.ReadWriter interface
 
 func main() {
 	fmt.Println(Indian(), "Indian")
+  
+  fmt.Println("GOOS                  =", runtime.GOOS)
+  fmt.Println("GOARCH                =", runtime.GOARCH)
+  fmt.Println("NumCPU                =", runtime.NumCPU())
 
 	fmt.Println("sizeof(bool)          =", unsafe.Sizeof(bool(false)))
 	fmt.Println("sizeof(byte)          =", unsafe.Sizeof(byte(0)))
