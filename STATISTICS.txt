@@ -170,4 +170,54 @@ sizeof(void*)       = 8
 sizeof(time_t)      = 8
 sizeof(size_t)      = 8
 ==============================================================================
+*** Raspberry-4 ARM32 Armbbian (buster)
+
+Golang (go1.11.6):
+Little Indian
+sizeof(bool)          = 1
+sizeof(byte)          = 1
+sizeof(int8)          = 1
+sizeof(int16)         = 2
+sizeof(int32)         = 4
+sizeof(int64)         = 8
+sizeof(int)           = 4
+sizeof(rune)          = 4
+sizeof(uintptr)       = 4
+sizeof(*int)          = 4
+sizeof(float32)       = 4
+sizeof(float64)       = 8
+sizeof(complex64)     = 8
+sizeof(complex128)    = 16
+sizeof(string)        = 8
+sizeof([1]int)        = 4
+sizeof([]int)         = 12
+sizeof(map[int]int)   = 4
+sizeof(func(){})      = 4
+sizeof(error(nil))    = 8
+sizeof(error(""))     = 8
+sizeof(any(0))        = 8
+sizeof(io.Reader)     = 8
+sizeof(io.ReadWriter) = 8
+sizeof(time.Time)     = 20
+sizeof(chan int)      = 4
+
+C (gcc 8.3.0):
+Little indian
+sizeof(void)        = 1
+sizeof(char)        = 1
+sizeof(short)       = 2
+sizeof(int)         = 4
+sizeof(long)        = 4
+sizeof(long long)   = 8
+sizeof(int32_t)     = 4
+sizeof(int64_t)     = 8
+sizeof(float)       = 4
+sizeof(float[2])    = 8
+sizeof(double)      = 8
+sizeof(long double) = 8
+sizeof(int*)        = 4
+sizeof(void*)       = 4
+sizeof(time_t)      = 4
+sizeof(size_t)      = 4
+==============================================================================
 
