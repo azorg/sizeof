@@ -35,6 +35,7 @@ func main() {
   
   fmt.Println("GOOS                  =", runtime.GOOS)
   fmt.Println("GOARCH                =", runtime.GOARCH)
+  fmt.Println("GOMAXPROCS            =", runtime.GOMAXPROCS(0))
   fmt.Println("NumCPU                =", runtime.NumCPU())
 
 	fmt.Println("sizeof(bool)          =", unsafe.Sizeof(bool(false)))
