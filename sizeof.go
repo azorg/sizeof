@@ -65,6 +65,7 @@ func main() {
 	fmt.Println("sizeof(io.Reader)     =", unsafe.Sizeof(io.Reader(new(rd))))
 	fmt.Println("sizeof(io.ReadWriter) =", unsafe.Sizeof(io.ReadWriter(new(rw))))
 
+	fmt.Println("sizeof(time.Duration) =", unsafe.Sizeof(time.Duration(0)))
 	fmt.Println("sizeof(time.Time)     =", unsafe.Sizeof(time.Now()))
 
 	c := make(chan int)
