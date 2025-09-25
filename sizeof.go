@@ -8,9 +8,9 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"runtime"
 	"time"
 	"unsafe"
-  "runtime"
 )
 
 type rd int
@@ -32,11 +32,11 @@ func (rw *rw) Write(p []byte) (n int, err error) { // io.ReadWriter interface
 
 func main() {
 	fmt.Println(Indian(), "Indian")
-  
-  fmt.Println("GOOS                  =", runtime.GOOS)
-  fmt.Println("GOARCH                =", runtime.GOARCH)
-  fmt.Println("GOMAXPROCS            =", runtime.GOMAXPROCS(0))
-  fmt.Println("NumCPU                =", runtime.NumCPU())
+
+	fmt.Println("GOOS                  =", runtime.GOOS)
+	fmt.Println("GOARCH                =", runtime.GOARCH)
+	fmt.Println("GOMAXPROCS            =", runtime.GOMAXPROCS(0))
+	fmt.Println("NumCPU                =", runtime.NumCPU())
 
 	fmt.Println("sizeof(bool)          =", unsafe.Sizeof(bool(false)))
 	fmt.Println("sizeof(byte)          =", unsafe.Sizeof(byte(0)))
@@ -62,6 +62,8 @@ func main() {
 	fmt.Println(`sizeof(error(""))     =`, unsafe.Sizeof(errors.New("")))
 
 	fmt.Println("sizeof(any(0))        =", unsafe.Sizeof(any(0)))
+	ifs := any(0) 
+	fmt.Println("sizeof(&any(0))       =", unsafe.Sizeof(&ifs))
 	fmt.Println("sizeof(io.Reader)     =", unsafe.Sizeof(io.Reader(new(rd))))
 	fmt.Println("sizeof(io.ReadWriter) =", unsafe.Sizeof(io.ReadWriter(new(rw))))
 
